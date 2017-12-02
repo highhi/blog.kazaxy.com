@@ -9,7 +9,7 @@
     "build:css": "postcss static/css/*.css -d public/css",
     "watch:css": "npm run build:css -- -w",
     "watch:css:base": "npm run css:base -- --watch",
-    "deploy": "npm run build:css && hugo -D"
+    "deploy": "npm run build:css && hugo"
   },
   "repository": {
     "type": "git",
