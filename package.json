@@ -1,0 +1,30 @@
+{
+  "name": "blog.kazaxy.net",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run server & npm run watch:css",
+    "server": "hugo server -D -w",
+    "build:css": "postcss static/css/*.css -d public/css",
+    "watch:css": "npm run build:css -- -w",
+    "watch:css:base": "npm run css:base -- --watch",
+    "deploy": "npm run build:css && hugo -D"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highhi/blog.kazaxy.com.git"
+  },
+  "author": "highhi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/highhi/blog.kazaxy.com/issues"
+  },
+  "homepage": "https://blog.kazaxy.com",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "cssnano": "^3.10.0",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^4.1.1"
+  }
+}

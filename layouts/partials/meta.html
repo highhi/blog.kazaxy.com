@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Kazuya Mizuno">
+{{ if .IsPage }}
+  <title>{{ .Site.Title }}</title>
+{{ else }}
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+{{ end }}
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+<link rel="stylesheet" href="/css/vars.css">
+<link rel="stylesheet" href="/css/base.css">
+{{ if .IsHome }}
+  <link rel="stylesheet" href="/css/home.css">
+{{ end }}
+{{ if .IsPage }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+<link rel="stylesheet" href="/css/page.css">
+{{ end }}
+<link rel="alternate" href="/rss.xml" title="1000ch.net" type="application/rss+xml">

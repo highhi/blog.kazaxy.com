@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>blog.kazaxy.net</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}style.css">
+  {{ partial "meta.html" . }}
 </head>
 <body>
   <head class="Header">
-    <h1 class="Header_Title">blog.kazaxy.net</h1>
+    <h1 class="Header_Title">
+      <a href="{{ .Site.BaseURL }}">blog.kazaxy.net</a>
+    </h1>
   </head>
   

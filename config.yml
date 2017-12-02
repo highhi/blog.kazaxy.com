@@ -1,0 +1,8 @@
+baseURL: "https://blog.kazaxy.net"
+languageCode: "ja"
+title: "blog.kazaxy.net"
+uglyUrls: true
+params:
+  author: "highhi"
+permalinks:
+  post: "/:year/:title"

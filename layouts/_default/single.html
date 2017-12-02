@@ -1,12 +1,14 @@
 {{ partial "header.html" . }}
-<article>
-  <header class="entry-header">
-    <span class="entry-date">{{ .Date }}</span>
-    <h1 class="entry-title">{{ .Title }}</h1>
-  </header>
- 
-  <div class="entry-content">
-    {{ .Content }}
-  </div>
-</article>
+<main>
+  <article class="pg-Article">
+    <header class="pg-Article-Header">
+      <time class="Published" datetime="2017-12-02">2017-12-02</time>
+      <h1 class="pg-Article-Title">{{ .Title }}</h1>
+    </header>
+
+    <div class="pg-Article-Body">
+      {{ .Content }}
+    </div>
+  </article>
+</main>
 {{ partial "footer.html" . }}

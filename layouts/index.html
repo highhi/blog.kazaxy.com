@@ -1,7 +1,10 @@
 {{ partial "header.html" . }}
-<ul>
+<article class="hp-List">
   {{ range .Data.Pages }}
-    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+    <div class="hp-List_Item">
+      <time class="Published" datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "2006-01-02"}}</time>
+      <h1 class="hp-List_Item-title"><a href="{{.Permalink}}">{{.Title}}</a></h1>
+    </div>
   {{ end }}
-</ul>
+</article>
 {{ partial "footer.html" . }}

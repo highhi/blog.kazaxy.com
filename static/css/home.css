@@ -1,0 +1,22 @@
+.hp-List {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hp-List_Item {
+  margin-bottom: 3.2rem;
+  padding: 0 2rem;
+}
+
+.hp-List_Item-title {
+  font-size: 2.8rem;
+}
+
+.hp-List_Item-title a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hp-List_Item-title a:hover {
+  color: var(--color-4);
+}
