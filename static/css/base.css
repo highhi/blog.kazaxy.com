@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.Wrapper {
+  padding: 80px 0;
+}
+
 .Header_Title {
   margin-bottom: 4rem;
   padding: 1.6rem 0;
@@ -44,4 +48,15 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .4rem;
   font-weight: bold;
   line-height: 1rem;
+}
+
+.Footer {
+  width: 100%;
+  padding: .4rem 0;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
 }
