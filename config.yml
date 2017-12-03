@@ -2,6 +2,7 @@ baseURL: "https://blog.kazaxy.net"
 languageCode: "ja"
 title: "blog.kazaxy.net"
 uglyUrls: true
+rssuri: "feed.xml"
 params:
   author: "highhi"
 permalinks:
