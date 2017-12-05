@@ -5,8 +5,6 @@ const assets = [
   'css/home.css',
   'css/page.css',
 ];
-
-const fu = 'fu';
  
 self.addEventListener('install', event => {
   const saving = caches.open(CACH_KEY_NAME).then(cache => {
@@ -26,7 +24,6 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   const url = event.request.url;
-  console.log(url);
   if (!assets.some(file => url.includes(file))) {
     return;
   }
