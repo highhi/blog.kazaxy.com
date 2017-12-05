@@ -9,6 +9,8 @@
     "build:css": "postcss static/css/*.css -d public/css",
     "watch:css": "npm run build:css -- -w",
     "watch:css:base": "npm run css:base -- --watch",
+    "build:verions": "babel --plugins transform-inline-environment-variables script.js",
+    "build:js": "webpack",
     "deploy": "npm run build:css && hugo"
   },
   "repository": {
@@ -23,8 +25,13 @@
   "homepage": "https://blog.kazaxy.com",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "cssnano": "^3.10.0",
     "npm-run-all": "^4.1.2",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^4.1.1",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^3.9.1"
   }
 }
