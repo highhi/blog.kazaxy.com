@@ -6,12 +6,10 @@
   "scripts": {
     "start": "npm run server & npm run watch:css",
     "server": "hugo server -D -w",
-    "build:css": "postcss static/css/*.css -d public/css",
+    "build:css": "postcss src/css/*.css -d static/css",
     "watch:css": "npm run build:css -- -w",
-    "watch:css:base": "npm run css:base -- --watch",
-    "build:verions": "babel --plugins transform-inline-environment-variables script.js",
-    "build:js": "webpack",
-    "deploy": "npm run build:css && hugo"
+    "build:js": "GIT_REVISION_HASH=`git rev-parse HEAD` webpack",
+    "deploy": "npm run build:css && NODE_ENV=production GIT_REVISION_HASH=`git rev-parse HEAD` webpack -p && hugo"
   },
   "repository": {
     "type": "git",

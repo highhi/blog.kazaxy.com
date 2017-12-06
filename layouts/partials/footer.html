@@ -5,9 +5,9 @@
 <script>
   if (navigator.serviceWorker) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js', { scope: '/' })
+      navigator.serviceWorker.register('/sw.js', { scope: '/' })
         .then(registration => navigator.serviceWorker.ready)
-        .then(resistration => resistration)
+        .then(resistration => console.log('service worker registered'))
         .catch(err => {
           throw new Error(err);
         });
