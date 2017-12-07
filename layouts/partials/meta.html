@@ -3,9 +3,9 @@
 <meta name="author" content="Kazuya Mizuno">
 <meta name="copyright" content="Copyright (c) Kazuya Mizuno">
 {{ if .IsPage }}
-  <title>{{ .Site.Title }}</title>
-{{ else }}
   <title>{{ .Title }} - {{ .Site.Title }}</title>
+{{ else }}
+  <title>{{ .Site.Title }}</title>
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
