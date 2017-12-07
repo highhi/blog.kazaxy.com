@@ -1,7 +1,7 @@
 ---
 title: "Service Workerを利用するときの2つの配慮"
 date: 2017-12-06T21:16:24+09:00
-draft: true
+draft: false
 ---
 
 このブログに`Service Worker`を導入して`css`をキャッシュした。これで`css`に関してはキャッシュさえあればサーバーへリクエストすることなくレスポンスを得ることができる。
