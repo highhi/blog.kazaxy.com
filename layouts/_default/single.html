@@ -2,7 +2,7 @@
 <main>
   <article class="pg-Article">
     <header class="pg-Article-Header">
-      <time class="Published" datetime="2017-12-02">2017-12-02</time>
+      <time class="Published" datetime="{{.Date.Format "2006-01-02"}}">{{.Date.Format "2006-01-02"}}</time>
       <h1 class="pg-Article-Title">{{ .Title }}</h1>
     </header>
 
